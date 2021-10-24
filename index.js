@@ -9,30 +9,39 @@ inquirer
             err ? console.log(err) : console.log('Success!'));
     });
 
-// const resourceLinks = resources.split(",");
-// const installationSteps = installation.split(",");
+const parseString = (string) => {
+    let list = string.split(',');
+    let items = '';
+    list.forEach(item => {items+=`- ${item}\n`});
+    return items;
+}
 
-const readMeStruct = ({projectName, description, installation, usageInst, usageImg, credits, license, githubUN, email}) =>
+const readMeStruct = ({projectName, description, installation, usageInst, usageImg, people, resources, test, license, githubUN, email}) =>
 `# ${projectName}
 ## Description
 ${description}\n
 Live Link: [title](https://github.com/${githubUN}/${projectName})
 ${description}\n
+---
 ## Table of Contents
 - [Installation](#installation)
 - [Usage](#usage)
 - [Credits](#credits)
 - [License](#license)
 - [Questions](#questions)
+---
 ## Installation
+${parseString(installation)}
 ## Usage
 ${usageInst}
 ![${usageImg}](./images/${usageImg})
+## Tests
+${test}
 ## Credits
 ### People
-${credits}
+${parseString(people)}
 ### Resources
-${resources}
+${parseString(resources)}
 ## License
 ![alt text](https://img.shields.io/static/v1?label=${license}&message=${license}&color=brightgreen&style=plastic
 ## Questions

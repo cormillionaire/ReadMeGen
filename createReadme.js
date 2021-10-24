@@ -26,8 +26,8 @@ module.exports =
 },
 {
     type: 'input',
-    message: "Who helped you and what's their github?",
-    name: 'credits',
+    message: "Who helped you and what's their github(ie. name - github,name - github)?",
+    name: 'people',
 },
 {
     type: 'input',
@@ -43,7 +43,7 @@ module.exports =
     type: 'list',
     message: 'What licenses did you use?',
     name: 'license',
-    choices: ['The MIT License', 'GNU GPLv3', 'Apache 2.0', 'ISC']
+    choices: ['MIT', 'GPLv3', 'Apache', 'ISC']
 },
 {
     type: 'input',
