@@ -20,7 +20,7 @@ const readMeStruct = ({projectName, description, installation, usageInst, usageI
 `# ${projectName}
 ## Description
 ${description}\n
-Live Link: [title](https://github.com/${githubUN}/${projectName})
+Live Link: [${projectName}](https://github.com/${githubUN}/${projectName})
 ${description}\n
 ---
 ## Table of Contents
@@ -33,7 +33,7 @@ ${description}\n
 ## Installation
 ${parseString(installation)}
 ## Usage
-${usageInst}
+${usageInst}\n
 ![${usageImg}](./images/${usageImg})
 ## Tests
 ${test}
@@ -43,8 +43,8 @@ ${parseString(people)}
 ### Resources
 ${parseString(resources)}
 ## License
-![alt text](https://img.shields.io/static/v1?label=${license}&message=${license}&color=brightgreen&style=plastic
+![alt text](https://img.shields.io/static/v1?label=${license}&message=${license}&color=brightgreen&style=plastic)
 ## Questions
-Github UN ${githubUN} [title](https://github.com/${githubUN})
+Github UN: ${githubUN} - [${githubUN}](https://github.com/${githubUN})
 You can contact me via email by emailing ${email} with your questions
 `

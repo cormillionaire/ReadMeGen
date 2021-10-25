@@ -37,7 +37,7 @@ module.exports =
 {
     type: 'input',
     message: 'What are the test instructions?',
-    name: 'tests',
+    name: 'test',
 },
 {
     type: 'list',
