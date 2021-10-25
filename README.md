@@ -14,7 +14,7 @@ This project creates read mes easily so that I can be consistent in all my proje
 - [Questions](#questions)
 ---
 ## Installation
-- Got to project
+- Go to project
 - Clone
 - Pull down when needed
 - Enjoy!

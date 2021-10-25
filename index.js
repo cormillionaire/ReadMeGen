@@ -43,7 +43,7 @@ ${parseString(people)}
 ### Resources
 ${parseString(resources)}
 ## License
-![alt text](https://img.shields.io/static/v1?label=${license}&message=${license}&color=brightgreen&style=plastic)
+![${license}](https://img.shields.io/static/v1?label=license&message=${license}&color=brightgreen&style=plastic)
 ## Questions
 Github UN: ${githubUN} - [${githubUN}](https://github.com/${githubUN})
 You can contact me via email by emailing ${email} with your questions
