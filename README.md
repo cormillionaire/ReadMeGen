@@ -21,7 +21,7 @@ This project creates read mes easily so that I can be consistent in all my proje
 
 ## Usage
 Use this everytime you have a new project you are creating and storing in your source versioning tool of choice
-
+![ReadMeCreation.gif](./images/ReadMeCreation.gif)
 ![good.jpeg](./images/good.jpeg)
 ## Tests
 Run,See if the Readme looks good
